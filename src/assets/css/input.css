@@ -1,0 +1,48 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.32);
+  position: relative;
+  padding-left:  16px;
+  border-radius: 4px;
+
+  margin: 12px 0;
+}
+
+.input-group input {
+  background-color: transparent;
+  min-width: 368px;
+  height: 40px;
+
+  color: #FFFFFF;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+
+  margin-top: 22px;
+  outline: 0;
+}
+
+.input-group label {
+  color: #FFFFFF;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+
+  pointer-events: none;
+  opacity: 0.5;
+
+  position: absolute;
+  margin-top: -7px;
+
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+
+.input-group:focus-within label {
+  transform: translate(0, 14px) scale(0.75);
+}
